@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite id="0" name="/projects/challenge/src/App.test.js" errors="0" package="/projects/challenge/src/App.test.js" hostname="localhost" tests="15" failures="11" time="1.27" timestamp="2021-03-17T13:50:48">
+    <properties>
+    </properties>
+    <testcase classname="renders without crashing" name="renders without crashing" time="0">
+    </testcase>
+    <testcase classname="should show no results message" name="should show no results message" time="0">
+    </testcase>
+    <testcase classname="adding a new row" name="should add a row with valid data" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:75:30)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="adding a new row" name="should not add the row if ratings is empty" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:89:30)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="adding a new row" name="should not add the row if name is empty" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:103:30)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="adding a new row" name="should not add the row if duration is empty" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:117:30)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="adding a new row" name="should not add the row if data invalid" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:131:30)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="adding multiple rows" name="should have added 5 rows" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:164:30)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="adding multiple rows" name="should show the table in sorted order" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:174:30)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="adding multiple rows" name="should not show the no result message" time="0">
+    </testcase>
+    <testcase classname="filtering results" name="should not filter before 2 keys" time="0">
+    </testcase>
+    <testcase classname="filtering results" name="should filter results" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:214:32)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="filtering results" name="should show new entries when added which pass the filter" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:232:32)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="filtering results" name="should show no results message when filtered result empty" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:251:32)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <testcase classname="adding multiple rows" name="should update an existing record based the movie name" time="0">
+      <failure message="Error: Unable to find an element by: [id=&quot;directory-table&quot;]
+
+[36m&lt;div&gt;[39m
+  [36m&lt;div&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;name-input&quot;[39m
+    [36m&gt;[39m
+      [0mMovie Name[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;name-input&quot;[39m
+      [33mname[39m=[32m&quot;movieName&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;ratings-input&quot;[39m
+    [36m&gt;[39m
+      [0mRatings[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;ratings-input&quot;[39m
+      [33mname[39m=[32m&quot;ratings&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;duration-input&quot;[39m
+    [36m&gt;[39m
+      [0mDuration[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;duration-input&quot;[39m
+      [33mname[39m=[32m&quot;duration&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;button[39m
+      [33mid[39m=[32m&quot;submit-button&quot;[39m
+    [36m&gt;[39m
+      [0msubmit[0m
+    [36m&lt;/button&gt;[39m
+    [36m&lt;p[39m
+      [33mfor[39m=[32m&quot;search-input&quot;[39m
+    [36m&gt;[39m
+      [0mSearch[0m
+    [36m&lt;/p&gt;[39m
+    [36m&lt;input[39m
+      [33mid[39m=[32m&quot;search-input&quot;[39m
+      [33mvalue[39m=[32m&quot;&quot;[39m
+    [36m/&gt;[39m
+    [36m&lt;p[39m
+      [33mid[39m=[32m&quot;no-result&quot;[39m
+    [36m&gt;[39m
+      [0mNo Results Found[0m
+    [36m&lt;/p&gt;[39m
+  [36m&lt;/div&gt;[39m
+[36m&lt;/div&gt;[39m
+    at getElementError (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:30:10)
+    at getAllByTestId (/projects/challenge/src/test-utils.js:19:11)
+    at Object.firstResultOrNull (/projects/challenge/node_modules/dom-testing-library/dist/query-helpers.js:38:30)
+    at firstResultOrNull (/projects/challenge/src/test-utils.js:28:23)
+    at tableRowsIn (/projects/challenge/src/App.test.js:8:17)
+    at Object.tableRowsIn (/projects/challenge/src/App.test.js:272:30)
+    at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmine_async.js:108:37)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:56:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:43:19)
+    at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queue_runner.js:87:41)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)" type="AssertionError">
+      </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>
